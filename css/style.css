@@ -10,7 +10,7 @@
     content: "";
     clear: both;
 }
-/* header */
+/* header general*/
 header{
     background-color: #255ee9;
     padding: 10px;
@@ -25,4 +25,37 @@ header{
 }
 .col{
     margin: auto;
+}
+/* LINK LIST */
+.link-header ul li {
+    display: inline-block;
+}
+
+.link-header ul li a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+/* BOTTONE ACCEDI */
+div button{
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+}
+/* MAIN INTRO */
+.intro{
+    background: url("../img/jumbo.png");
+    height: 80vh;
+    position: relative;
+    background-position: center;
+    background-size:cover;
+}
+.testo-intro{
+    position: absolute;
+    color: white;
+    text-align: center;
+    padding: 70px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
