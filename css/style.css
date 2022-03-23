@@ -1,0 +1,28 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* GENERAL */
+.clearfix::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+/* header */
+header{
+    background-color: #255ee9;
+    padding: 10px;
+}
+
+.container-header{
+    display: flex;
+    text-align: center;
+    width: 1200px;
+    margin: auto;
+    align-items: center;
+}
+.col{
+    margin: auto;
+}
