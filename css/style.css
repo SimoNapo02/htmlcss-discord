@@ -1,16 +1,23 @@
 /* RESET */
-* {
-    margin: 0;
+*{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-/* GENERAL */
+
+/* CLEARFIX */
 .clearfix::after{
     display: table;
+    clear:both;
     content: "";
-    clear: both;
 }
-/* header general*/
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+
 header{
     background-color: #255ee9;
     padding: 10px;
@@ -18,44 +25,244 @@ header{
 
 .container-header{
     display: flex;
-    text-align: center;
-    width: 1200px;
-    margin: auto;
     align-items: center;
-}
-.col{
+    text-align: center;
+    min-width: 1200px;
     margin: auto;
 }
-/* LINK LIST */
-.link-header ul li {
+
+.col{   
+    margin:auto;
+}
+
+.link-list ul li {
     display: inline-block;
 }
 
-.link-header ul li a {
-    color: white;
-    margin: 10px;
+.link-list ul li a{
+    color:white;
     text-decoration: none;
+    margin:15px;
 }
-/* BOTTONE ACCEDI */
+
 div button{
-    padding: 10px;
+    padding: 12px;
     border-radius: 30px;
-    border: none;
+    border:none;
 }
-/* MAIN INTRO */
+
 .intro{
     background: url("../img/jumbo.png");
     height: 80vh;
-    position: relative;
     background-position: center;
-    background-size:cover;
+    background-size: cover;
+    position: relative;
+    
 }
+
 .testo-intro{
     position: absolute;
-    color: white;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    color:white;
     text-align: center;
     padding: 70px;
-    left: 50%;
-    top: 50%;
+}
+
+.testo-intro button{
+    margin: auto 10px;
+    padding: 15px 30px;
+    font-size: 17px;
+}
+
+.testo-intro h1{
+    font-size: 40px;
+}
+
+.testo-intro p{
+    margin: 30px auto 20px auto;
+}
+
+.testo-intro button:last-child{
+    background-color: black;
+    color:white;
+}
+
+ /* .sezione-2{
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    margin: auto;
+}
+
+.col-text{
+    max-width: 40%;
+}  */
+
+.container-sezione{
+    width: 1200px;
+    margin: auto;
+}
+
+.container-sezione button{
+    margin:0 auto;
+}
+
+.sezione{
+    /* margin-top:50px; */
+    margin: 50px auto 300px auto;
+}
+
+.sezione .col{
+    float:left;
+}
+
+.col-image{
+    width: 70%;
+}
+
+.col-testo{
+    width: 30%;
+    padding-top: 40px ;
+    margin-left:50px;
+}
+
+.col-testo h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.sezione-5{
+    text-align: center;
+}
+
+.img-sec-5{
+    background: url("../img/item4-big.svg");
+    height: 600px;
+    background-position: center center;
+    background-size: cover;
+}
+
+.sezione-5-testo{
+    padding: 0 200px;
+    margin-bottom: 50px;
+}
+
+.sezione-5-testo h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.sezione-6{
+    text-align: center;
+    margin-top:50px;
+}
+.sezione-6 button{
+    background: #8ea1e1;
+    color:#fff;
+    padding: 15px 30px;
+}
+
+.img-sec-6{
+   text-align: center;
+   position: relative;
+   margin-bottom: 40px;
+}
+
+.testo-white{
+    color:white;
+}
+
+.testo-viola{
+    color:#7289da;
+}
+
+.img-sec-6 img{
+    width: 40%;
+}
+
+.img-sec-6 h2{
+    position:absolute;
+    top:50;
+    left:50%;
+    font-size:30px;
     transform: translate(-50%,-50%);
+}
+
+footer{
+    background: #23272a;
+    height: 75vh;
+    margin-top: 150px;
+}
+
+.container-footer{
+    padding-top: 60px;
+    width: 1200px;
+    margin: auto;
+}
+
+.footer-col{
+    float:left;
+    width: 20%;
+    
+}
+
+.col-social h2{
+    margin-bottom: 15px;
+}
+
+.col-social img{
+    height: 20px;
+    vertical-align: middle;
+}
+
+.col-social select{
+    color:white;
+    background: transparent;
+    border:none;
+}
+
+.col-social i{
+    margin:10px 15px auto 0;
+}
+
+.footer-top{
+    margin-bottom: 20px;
+}
+
+.footer-col ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-col ul li{
+    margin:10px auto;
+}
+
+.footer-col ul {
+    list-style-type: none;
+    margin:10px auto;
+
+}
+
+.line-footer{
+    border:1px solid #7289da;
+}
+
+.logo{
+    float: left;
+}
+
+.sign-in{
+    float: right;
+}
+
+.sign-in button{
+    background-color: lightgray;
+}
+
+.footer-bottom{
+    margin-top:30px;
 }
